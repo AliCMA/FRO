@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9aa07d589f.js" crossorigin="anonymous"></script>
+    <script src="/js/main.js" defer></script>
+    <title>Shopping</title>
+</head>
+
+<body>
+    <section id="js--checkoutWindow" class="checkout a-animatie">
+        <ul class="checkout__list">
+            <li class="checkout__listItem">
+                <img src="/img/buzzy.webp" alt="" class="checkout__image">
+                <p class="checkout__title">Buzzy</p>
+                <p id="js--amount-buzzy" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/c3po.webp" alt="" class="checkout__image">
+                <p class="checkout__title">C3PO</p>
+                <p id="js--amount-c3po" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/ironman.webp" alt="" class="checkout__image">
+                <p class="checkout__title">Iron man</p>
+                <p id="js--amount-ironman" class="checkout__amount"></p>
+            </li>
+        </ul>
+    </section>
+    <article class="modal a-animatie" id="js--shoppingModal">
+        &#10003;Added to Cart
+    </article>
+    <button id="js--checkoutButton" class="shoppingCart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <div class="shoppingCart__message">0</div>
+    </button>
+    <main>
+        <ul class="games">
+            <li class="games__game a-animatie">
+                <figure class="games__figure">
+                    <img src="/img/buzzy.webp" alt="Buzzy Lightyear van de aldora shop " class="games__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€25,-</h2>
+                    <h3 class="games__h3">Buzzy beeldje</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;</div>
+                    <button data-product="buzzy" class="games__button">Add to Cart</button>
+                </section>
+
+            </li>
+            <li class="games__game a-animatie">
+                <figure class="games__figure">
+                    <img src="/img/c3po.webp" alt="C3PO beeldje" class="games__img">
+                </figure>
+                <section class="games__body">
+                    <s>€49</s>
+                    <h2 class="games__h2">€20,-</h2>
+                    <h3 class="games__h3">C3PO beeldje</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="c3po" class="games__button">Add to cart</button>
+                </section>
+            </li>
+
+            <li class="games__game games__game--third a-animatie">
+                <figure class="games__figure">
+                    <img src="/img/ironman.webp" alt="De ironman beeldje" class="games__img">
+                </figure>
+                <section class="games__body">
+                    <h2 class="games__h2">€35,-</h2>
+                    <h3 class="games__h3">Iron man beeldje</h3>
+                    <div class="games__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="ironman" class="games__button">Add to cart</button>
+                </section>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
