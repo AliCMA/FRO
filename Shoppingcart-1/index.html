@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <script src="/js/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/cb4527b064.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="js--checkoutwindow" class="checkout a-popup">
+    <ul class="checkout_list">
+      <li class="checkout_listitem">
+        <img src="img/buzzy.webp" alt="buzz foto" class="checkout_image">
+        <p class="checkout_title">Buzz Lightyear</p>
+        <p id="js--amount-buzz" class="checkout_amount"></p>
+        <p id="js--price-buzz" class="checkout_price"> </p>
+      </li>
+      <li class="checkout_listitem">
+        <img src="img/ironman.webp" alt="ironman foto" class="checkout_image">
+        <p class="checkout_title">Ironman</p>
+        <p id="js--amount-ironman" class="checkout_amount"></p>
+        <p id="js--price-ironman" class="checkout_price"></p>
+      </li>
+      <li class="checkout_listitem">
+        <img src="img/c3po.webp" alt="c3po foto" class="checkout_image">
+        <p class="checkout_title">C3PO</p>
+        <p id="js--amount-robot" class="checkout_amount"></p>
+        <p id="js--price-robot" class="checkout_price"></p>
+      </li>
+      <li class="checkout_listitem">
+        <img src="img/hulk.JPG" alt="hulk beeldje foto" class="checkout_image">
+        <p class="checkout_title">Ring</p>
+        <p id="js--amount-moments" class="checkout_amount"></p>
+        <p id="js--price-moments" class="checkout_price"></p>
+      </li>
+      <li class="checkout_listitem">
+        <img src="img/hulk2.JPG" alt="hulk armband foto" class="checkout_image">
+        <p class="checkout_title">Hulkje</p>
+        <p id="js--amount-triple" class="checkout_amount"></p>
+        <p id="js--price-triple" class="checkout_price"></p>
+      </li>
+
+    </ul>
+  </section>
+  <article class="modal a-popup" id="js--shoppingmodal">
+    ✓ Added to cart
+  </article>
+  <button id="js--checkoutbutton" class="shoppingcart">
+    <i id="js--cart" class="fa-solid fa-bag-shopping"></i>
+    <i id="js--arrow" class="fa-solid fa-arrow-left-long arrow_icon"></i>
+    <div class="shoppingcart_message">
+      0
+    </div>
+  </button>
+  <section class="fill"></section>
+  <section class="searchbar">
+    <input id="js--searchbar" type="text" placeholder="Search for a product here.." class="searchbar_input">
+    <i class="fa-solid fa-magnifying-glass searchbar_glass"></i>
+  </section>
+  <main>
+    <ul class="games">
+      <li data-title="BUZZ" class="games_game">
+        <figure class="games_figure">
+          <img src="img/buzzy.webp" alt="Buzz image" class="games_img" />
+        </figure>
+        <section class="games_body">
+          <h2 class="games_h2">€99,-</h2>
+          <h3 class="games_h3">Buzz</h3>
+          <div class="games_stars">★★★★★</div>
+          <button data-product="buzz" class="games_button">Add to cart</button>
+        </section>
+      </li>
+
+
+      <li data-title="IRONMAN" class="games_game">
+        <figure class="games_figure">
+          <img src="img/ironman.webp" alt="ironman foto" class="games_img" />
+        </figure>
+        <section class="games_body">
+          <s>€59,-</s>
+          <h2 class="games_h2">€29,-</h2>
+          <h3 class="games_h3">Ironman</h3>
+          <section class="games_stars">★★</section>
+          <button data-product="ironman" class="games_button">Add to cart</button>
+        </section>
+      </li>
+      <li data-title="C3PO" class="games_game games_game--third">
+        <figure class="games_figure">
+          <img src="img/c3po.webp" alt="robot image" class="games_img" />
+        </figure>
+        <section class="games_body">
+          <h2 class="games_h2">€49,-</h2>
+          <h3 class="games_h3">C3PO</h3>
+          <section class="games_stars">★★★★★★</section>
+          <button data-product="robot" class="games_button">Add to cart</button>
+        </section>
+      </li>
+
+      
+      <li data-title="HULK" class="games_game">
+        <figure class="games_figure">
+          <img src="img/hulk.JPG" alt="moments ring image" class="games_img" />
+        </figure>
+        <section class="games_body">
+          <h2 class="games_h2">€110,-</h2>
+          <h3 class="games_h3">Hulk beeldje</h3>
+          <div class="games_stars">★★★★★★</div>
+          <button data-product="moments" class="games_button">Add to cart</button>
+        </section>
+      </li>
+      <li data-title="HULK ARMBAND" class="games_game">
+        <figure class="games_figure">
+          <img src="img/hulk2.JPG" alt="triple ring image" class="games_img" />
+        </figure>
+        <section class="games_body">
+          <h2 class="games_h2">€150,-</h2>
+          <h3 class="games_h3">Hulk armbandje</h3>
+          <div class="games_stars">★★★★★★★</div>
+          <button data-product="triple" class="games_button">Add to cart</button>
+        </section>
+      </li>
+    </ul>
+  </main>
+  <section class="fill"></section>
+</body>
+
+</html>
